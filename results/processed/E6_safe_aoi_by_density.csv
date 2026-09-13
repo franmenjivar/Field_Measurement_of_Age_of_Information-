@@ -1,0 +1,16 @@
+density_per_km2,aoi_max_safe_s,limiting_constraint,n_observations,n_skipped_bins,min_recall
+10,0.25,recall,8597,1,0.9
+25,0.1,recall,27897,0,0.9
+50,,recall,50102,0,0.9
+75,0.5,recall,82254,0,0.9
+100,0.5,recall,103823,0,0.9
+10,,recall,8597,1,0.95
+25,,recall,27897,0,0.95
+50,,recall,50102,0,0.95
+75,0.25,recall,82254,0,0.95
+100,0.1,recall,103823,0,0.95
+10,,recall,8597,1,0.99
+25,,recall,27897,0,0.99
+50,,recall,50102,0,0.99
+75,,recall,82254,0,0.99
+100,,recall,103823,0,0.99

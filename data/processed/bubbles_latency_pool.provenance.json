@@ -1,0 +1,69 @@
+{
+  "source_dataset": "BUBBLES",
+  "source_files": [
+    "data/raw/bubbles/DroneFlightDataset/2022_04_11/input/telemetry",
+    "data/raw/bubbles/DroneFlightDataset/2022_04_11/utm_tracks"
+  ],
+  "source_sha256": {},
+  "scenario_id": "2022_04_11",
+  "reference_rate_hz": null,
+  "coordinate_frame": "ENU",
+  "origin": {
+    "origin_lat_deg": 39.60206659004054,
+    "origin_lon_deg": -0.28946128165722773,
+    "origin_alt_m": 32.5
+  },
+  "resampling_method": null,
+  "filters": [],
+  "notes": [
+    "ground truth = onboard telemetry, timestamped at generation (message.time) where that clock is an epoch clock",
+    "observed = utm_tracks; aoi_s = t - t_last as reported by the operational UTM, not recomputed",
+    "utm_tracks clock offset estimated at 7199.3 s",
+    "latency pool: day 1 only; day 2 excluded for per-aircraft clock offsets"
+  ],
+  "processing_version": "1.0",
+  "git_commit": null,
+  "python_version": "3.13.7",
+  "platform": "macOS-15.6-arm64-arm-64bit-Mach-O",
+  "created_utc": "2026-09-06T23:51:42.289880+00:00",
+  "extra": {
+    "clock_kind": {
+      "ADS-Phanthom|epoch": 6292,
+      "ADS-Phanthom|uptime_aligned": 14,
+      "ADS-Phanthom|probe_dropped": 14,
+      "ASD-Madv-4|epoch": 4742,
+      "BV-Madv-1|epoch": 4908,
+      "BV-Madv-2|epoch": 5890,
+      "PLB-Madv-3|epoch": 3633,
+      "PLB-Mzoom-3|epoch": 5744,
+      "PLV-Mdual-1|uptime_aligned": 987,
+      "PLV-Mdual-1|probe_dropped": 987,
+      "PLV-Mdual-1|epoch": 5236,
+      "PLV-Mdual-2|uptime_aligned": 911,
+      "PLV-Mdual-2|probe_dropped": 911,
+      "PLV-Mdual-2|epoch": 5105,
+      "PLV-Mzoom-1|epoch": 1972,
+      "PLV-Mzoom-2|epoch": 3457,
+      "UAW-Valaq|epoch": 2912,
+      "UPV-Matrice|uptime_aligned": 3524,
+      "UPV-Matrice|probe_dropped": 3524,
+      "UPV-Matrice|epoch": 8367,
+      "UPV-Mavic-1|uptime_aligned": 925,
+      "UPV-Mavic-1|probe_dropped": 925,
+      "UPV-Mavic-1|epoch": 6053,
+      "UPV-Mavic-2|uptime_aligned": 218,
+      "UPV-Mavic-2|probe_dropped": 218,
+      "UPV-Mavic-2|epoch": 5332
+    },
+    "n_messages": 69643,
+    "n_drones": 14,
+    "probe_messages_included": false,
+    "observations": {
+      "n_rows": 68788,
+      "n_skipped_records": 186,
+      "clock_offset_s": 7199.331000089645,
+      "n_tactical_alerts": 29201,
+      "n_probe_tracks": 802
+    }
+  }
+}

@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telemetry-freshness"
+version = "0.1.0"
+description = "Age-of-Information requirements for tactical conflict detection in high-density UAS traffic management"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Erick Menjivar", email = "erick@diimo.app" }]
+
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pandas>=2.1",
+    "pyarrow>=14",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "pyproj>=3.6",
+    "PyYAML>=6.0",
+    "tqdm>=4.66",
+    "joblib>=1.3",
+    "statsmodels>=0.14",
+]
+
+[project.optional-dependencies]
+# Log decoders for the raw IDF-DS / PX4 / INAV flight records.
+logs = [
+    "pymavlink>=2.4.41",
+    "pyulog>=1.2",
+]
+notebooks = [
+    "jupyterlab>=4.1",
+    "ipywidgets>=8.1",
+    "ipykernel>=6.29",
+    "nbformat>=5.9",
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "ruff>=0.4",
+]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "NPY"]
+ignore = ["E501"]

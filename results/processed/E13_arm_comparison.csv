@@ -1,0 +1,4 @@
+arm,n,recall,precision,missed_epochs,ttc_err_mean_s,ttc_err_p05_s,ttc_overestimated
+empirical,108000,0.9757,0.9779,933,-0.7887,-1.4652,0.9387
+fixed,108000,0.9747,0.9767,972,-0.8325,-1.3941,0.9521
+lognormal,108000,0.9742,0.9772,991,-0.784,-1.561,0.9291

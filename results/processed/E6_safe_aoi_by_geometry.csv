@@ -1,0 +1,5 @@
+encounter_type,aoi_max_safe_s,limiting_constraint,n_observations,n_skipped_bins,median_closing_speed_mps
+converging,0.5,recall,135000,0,5.357568053111255
+crossing,0.5,recall,135000,0,9.604686356149271
+head_on,0.5,recall,135000,0,14.999999999999998
+overtaking,0.25,recall,135000,0,9.0

@@ -1,0 +1,4 @@
+arm,aoi_max_safe_s,limiting_constraint,n_observations,n_skipped_bins
+empirical,,recall,108000,0
+fixed,,recall,108000,0
+lognormal,,recall,108000,1
