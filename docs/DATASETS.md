@@ -65,6 +65,19 @@ València. It is not on a public mirror this repository can link to directly;
 request it from the BUBBLES / SNA-UPV project authors. Announcement thread:
 <https://www.linkedin.com/posts/sna-upv_dataset-de-trayectorias-uas-para-la-validaci%C3%B3n-activity-7426565739358236672-p1qb>
 
+**Verifying your copy.** [`bubbles_manifest.sha256`](bubbles_manifest.sha256)
+lists the SHA-256 of every file used in the published runs (8,739 files: the
+telemetry and UTM track logs of both days plus `Dataset Ejercicio5_Fase2.docx`;
+paths relative to `DroneFlightDataset/`). The SHA-256 of the manifest itself is
+`d63f1d5bf4a7d84d81b255bd8a9387f973b3a0bf9c79ad8be2853f7f789d67a7`.
+
+```bash
+cd data/raw/bubbles/DroneFlightDataset
+shasum -a 256 -c --quiet ../../../../docs/bubbles_manifest.sha256   # sha256sum -c on Linux
+```
+
+No output means every file matches; any mismatch or missing file is listed.
+
 This is the only dataset that carries **measured** latency and Age of
 Information, so notebooks 01, 09, 10, 11 and 12 cannot run without it.
 
