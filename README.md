@@ -126,7 +126,7 @@ Each notebook runs one or more experiments from the catalogue, writes Parquet to
 
 | ID | Name | Independent variables |
 |---|---|---|
-| E1 | Pairwise rate × latency sweep | rate {0.5, 1, 2, 5, 10} Hz × latency {0, 50, 100, 250, 500, 1000} ms × geometry {head-on, crossing, overtaking, converging} × 100 Monte-Carlo seeds |
+| E1 | Pairwise rate × latency sweep | rate {0.5, 1, 2, 5, 10} Hz × latency {0, 100, 250, 500, 1000} ms × geometry {head-on, crossing, overtaking, converging} × 12 Monte-Carlo seeds (1000–1011) |
 | E2 | IDF-DS downsampling | rate {ref, 10, 5, 2, 1, 0.5} Hz × added delay {0, 50, 100, 250, 500, 1000} ms |
 | E3 | Manoeuvre sensitivity | flight phase {cruise, turn, climb, descent, high-accel} × AoI |
 | E4 | Density scaling | ρ {10, 25, 50, 75, 100} UAS/km² × AoI bins |

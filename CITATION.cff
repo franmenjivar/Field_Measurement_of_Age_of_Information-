@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Field Measurement of Age of Information: replication package (code and notebooks)"
+type: software
+authors:
+  - family-names: Menjivar
+    given-names: Erick
+version: 0.1.0
+date-released: 2026-11-21
+license: MIT
+repository-code: "https://github.com/franmenjivar/Field_Measurement_of_Age_of_Information-"

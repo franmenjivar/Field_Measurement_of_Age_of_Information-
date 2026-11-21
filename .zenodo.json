@@ -1,0 +1,12 @@
+{
+  "title": "Field Measurement of Age of Information: replication package (code and notebooks)",
+  "upload_type": "software",
+  "description": "Code, notebooks, stored results and figures for the study of Age of Information in operational U-space surveillance and its cost for tactical UAS conflict detection. Contains the telemetry_freshness Python package, thirteen analysis notebooks, and the test suite enforcing the study's scientific controls. The four source datasets (BUBBLES, IDF-DS, ICMCIS, U-AGREE) are third-party and not redistributed; see docs/DATASETS.md.",
+  "creators": [{"name": "Menjivar, Erick"}],
+  "license": "MIT",
+  "keywords": ["Age of Information", "UTM", "U-space", "UAS", "conflict detection", "surveillance", "telemetry"],
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.16992975", "relation": "requires", "scheme": "doi", "resource_type": "dataset"},
+    {"identifier": "https://zenodo.org/records/17737383", "relation": "requires", "scheme": "url", "resource_type": "dataset"}
+  ]
+}
